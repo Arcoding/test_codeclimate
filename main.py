@@ -28,6 +28,10 @@ if __name__ == "__main__":
             
     pct = correct_ones / df_len
     pct = pct * 100
+    pct = pct * 100
+    pct = pct * 100
+    pct = pct * 100
+    
     
     print("\n")
     print("_"*30)
