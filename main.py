@@ -7,7 +7,12 @@ if __name__ == "__main__":
     df_len = df.__len__()
     correct_ones = df[df['correct_answer'] == df['user_answer']].__len__()
     wrong_ones = df_len - correct_ones
-    
+
+    DF_NAME = "qa_answers.csv"
+    df = pd.read_csv(DF_NAME)
+    df_len = df.__len__()
+    correct_ones = df[df['correct_answer'] == df['user_answer']].__len__()
+    wrong_ones = df_len - correct_ones
  
     
     last_10 = df.tail(10)[['correct_answer', 'user_answer']].values
